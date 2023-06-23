@@ -1,0 +1,13 @@
+
+type Query {
+    getCompanyTree: GetCompanyTreeResponse!
+}
+
+type GetCompanyTreeResponse {
+    id: String,
+    createdAt: String,
+    name: String,
+    cost: Int,
+    parentId: String,
+    children: [GetCompanyTreeResponse]
+}
